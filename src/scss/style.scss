@@ -1,0 +1,117 @@
+@import "_values";
+@import "_nullstyles";
+@import "_modify";
+
+.container {
+    max-width: 1470px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+// Header
+.header {
+    background-color: #212121;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    &__row {
+        height: 51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__menu {
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        height: 31px;
+        display: flex;
+        align-items: center;
+        padding-left: 33.55px;
+        padding-right: 31.55px;
+        border-right: 2px dashed #000;
+        &:first-child {
+            padding-left: 0px;
+        }
+        &:last-child {
+            padding-right: 0px;
+            border-right: none;
+        }
+    }
+
+    &__link {
+        font-size: 15px;
+        font-weight: 300;
+        color: #fff;
+    }
+}
+
+// Main screen section
+
+.main-screen {
+    min-height: 799px;
+    background: url("../img/main_screen/uber_bg.jpg") center center/cover no-repeat;
+    &__top {
+        position: relative;
+        top: 51px;
+        padding: 16px 0px 17px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        max-width: 947px;
+        margin: 0px auto;
+    }
+
+    &__logo {
+    }
+
+    &__image {
+        cursor: pointer;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    &__official {
+        font-size: 13px;
+        font-weight: 100;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__call {
+        display: flex;
+        padding-top: 3px;
+    }
+
+    &__phone {
+        padding: 4px 0px 0px;
+        text-align: right;
+        margin-right: 32px;
+    }
+
+    &__call-us {
+        font-size: 12px;
+        font-weight: 300;
+        color: #fff;
+        margin-bottom: 6px;
+    }
+
+    &__number {
+        font-size: 22px;
+        color: #fff;
+    }
+
+    &__btn {
+    }
+
+    &__content {
+    }
+}

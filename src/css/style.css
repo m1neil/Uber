@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Roboto";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: "Roboto";
+}
+
+input::-ms-clear {
+  display: none;
+  font-family: "Roboto";
+}
+
+button {
+  cursor: pointer;
+  font-family: "Roboto";
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.btn {
+  width: 172px;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: inset 0px -3px 0 0 rgba(0, 0, 0, 0.12);
+  background-image: linear-gradient(to top, #1eacc7, #4ce2ff);
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1470px;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+.header {
+  background-color: #212121;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+.header__row {
+  height: 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+}
+.header__item {
+  height: 31px;
+  display: flex;
+  align-items: center;
+  padding-left: 33.55px;
+  padding-right: 31.55px;
+  border-right: 2px dashed #000;
+}
+.header__item:first-child {
+  padding-left: 0px;
+}
+.header__item:last-child {
+  padding-right: 0px;
+  border-right: none;
+}
+.header__link {
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.main-screen {
+  min-height: 799px;
+  background: url("../img/main_screen/uber_bg.jpg") center center/cover no-repeat;
+}
+.main-screen__top {
+  position: relative;
+  top: 51px;
+  padding: 16px 0px 17px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.main-screen__row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 947px;
+  margin: 0px auto;
+}
+.main-screen__image {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 6px;
+}
+.main-screen__official {
+  font-size: 13px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.5);
+}
+.main-screen__call {
+  display: flex;
+  padding-top: 3px;
+}
+.main-screen__phone {
+  padding: 4px 0px 0px;
+  text-align: right;
+  margin-right: 32px;
+}
+.main-screen__call-us {
+  font-size: 12px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.main-screen__number {
+  font-size: 22px;
+  color: #fff;
+}
