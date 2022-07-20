@@ -373,7 +373,7 @@
 
 // Terms section
 .terms {
-	padding: 68px 0px 22px;
+	padding: 68px 0px 3px;
 
 	&__suptitle {
 		margin: 0px auto 28px;
@@ -383,16 +383,24 @@
 		margin-bottom: 26px;
 	}
 
-	&__row {
+	&__body {
+		max-width: 1060px;
 		margin-left: 8px;
 	}
 
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px -52px;
+	}
+
 	&__column {
-		margin-bottom: 55px;
+		flex: 0 1 50%;
+		margin-bottom: 57px;
+		padding: 0px 52px;
 	}
 
 	&__item {
-		max-width: 478px;
 	}
 
 	&__lebal {
@@ -439,7 +447,7 @@
 	}
 
 	&__description {
-		margin-top: 10px;
+		margin-top: 9px;
 		color: #1ca8c3;
 		font-weight: 300;
 		font-size: 17px;
