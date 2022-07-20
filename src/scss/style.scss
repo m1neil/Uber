@@ -8,7 +8,7 @@
 }
 
 .container {
-	max-width: 1470px;
+	max-width: 1170px;
 	padding: 0px 15px;
 	margin: 0px auto;
 }
@@ -367,6 +367,82 @@
 		text-align: center;
 		font-size: 17px;
 		font-weight: 300;
+		line-height: 24px;
+	}
+}
+
+// Terms section
+.terms {
+	padding: 68px 0px 22px;
+
+	&__suptitle {
+		margin: 0px auto 28px;
+	}
+
+	&__title {
+		margin-bottom: 26px;
+	}
+
+	&__row {
+		margin-left: 8px;
+	}
+
+	&__column {
+		margin-bottom: 55px;
+	}
+
+	&__item {
+		max-width: 478px;
+	}
+
+	&__lebal {
+		color: #1ca8c3;
+		font-size: 22px;
+		font-weight: 400;
+		margin-bottom: 13px;
+		&_red {
+			color: #ff5656;
+		}
+	}
+
+	&__list {
+		padding-left: 19px;
+		li {
+			color: #222222;
+			font-size: 17px;
+			font-weight: 300;
+			line-height: 24px;
+			margin-bottom: 10px;
+			position: relative;
+			padding-left: 30px;
+			position: relative;
+			&:last-child {
+				margin-bottom: 0px;
+			}
+			&:before {
+				content: "";
+				position: absolute;
+				width: 21px;
+				height: 20px;
+				top: 3px;
+				left: 0px;
+				background: url("../icons/terms/check.png") 0 0 no-repeat;
+			}
+		}
+		&_red {
+			li {
+				&:before {
+					background: url("../icons/terms/check_red.png") 0 0 no-repeat;
+				}
+			}
+		}
+	}
+
+	&__description {
+		margin-top: 10px;
+		color: #1ca8c3;
+		font-weight: 300;
+		font-size: 17px;
 		line-height: 24px;
 	}
 }
