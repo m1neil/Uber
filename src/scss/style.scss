@@ -318,6 +318,25 @@
 		align-items: center;
 		margin: 0px auto;
 		cursor: pointer;
+		position: relative;
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			width: 14px;
+			height: 2px;
+			background-color: #1eacc7;
+			transition: all 0.4s ease-in-out 0s;
+		}
+		&:after {
+			transform: rotate(90deg);
+		}
+		&:hover {
+			&:before,
+			&:after {
+				background-color: #ff5656;
+			}
+		}
 	}
 }
 
@@ -452,5 +471,42 @@
 		font-weight: 300;
 		font-size: 17px;
 		line-height: 24px;
+	}
+}
+
+// Cities section
+
+.cities {
+	min-height: 717px;
+	padding: 49px 0px;
+	background: url("../img/cities/cities_bg.jpg") center center / cover no-repeat;
+	display: flex;
+	&__row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 100%;
+	}
+
+	&__suptitle {
+		margin-bottom: 27px;
+	}
+
+	&__title {
+		margin-bottom: 12px;
+	}
+
+	&__subtitle {
+		margin-bottom: 10px;
+		flex: 1 1 auto;
+	}
+
+	&__link {
+		color: #1fbad6;
+		font-size: 15px;
+		text-transform: uppercase;
+		&:visited {
+			color: #1fbad6;
+		}
 	}
 }
