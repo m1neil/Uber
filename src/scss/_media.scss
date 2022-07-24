@@ -1,0 +1,34 @@
+// General page
+// Media 1200px
+@media (max-width: 1200px) {
+	// Header
+	.header {
+		&__list {
+			li {
+				padding: 0px 27px;
+			}
+		}
+	}
+
+	// Benefits
+	.benefits {
+		&__item {
+			align-items: flex-start;
+		}
+
+		&__row {
+			margin: 0px -45px;
+		}
+
+		&__column {
+			padding: 0px 45px;
+		}
+	}
+
+	// Mobile
+	.mobile {
+		&__body {
+			max-width: 707px;
+		}
+	}
+}
