@@ -4,8 +4,8 @@
 }
 
 .container {
-	max-width: 1170px;
-	padding: 0px 15px;
+	max-width: 1190px;
+	padding: 0px 25px;
 	margin: 0px auto;
 }
 
@@ -126,7 +126,6 @@
 
 	// Main screen content
 	&__content {
-		// ! В зависимости от позиционирования дополнительного элемента маин скрина то и меняется padding-top def 151
 		padding-top: 67px;
 	}
 
@@ -141,6 +140,7 @@
 		font-weight: 900;
 		color: #fff;
 		margin-bottom: 10px;
+		line-height: 1.15;
 	}
 
 	&__subtitle {
@@ -148,6 +148,7 @@
 		font-weight: 700;
 		color: #fff;
 		margin-bottom: 23px;
+		line-height: 1.25;
 	}
 
 	&__text {
