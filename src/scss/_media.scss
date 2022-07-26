@@ -147,6 +147,22 @@
 		}
 	}
 
+	// Choice
+	.choice {
+		min-height: 650px;
+		&__content {
+			padding-bottom: 57px;
+		}
+
+		&__bg {
+			height: 311px;
+		}
+
+		&__cer {
+			max-width: 738px;
+		}
+	}
+
 	// Footer
 	.footer {
 		&__row {
@@ -206,9 +222,7 @@
 
 	.main-screen {
 		&__subtitle {
-			max-width: 500px;
-			margin-left: auto;
-			margin-right: auto;
+			font-size: 30px;
 		}
 	}
 }
@@ -225,7 +239,6 @@
 			background-color: rgba(0, 0, 0, 0.8);
 			flex-direction: column;
 			padding-left: 25px;
-			padding-top: 220px;
 			transition: left 0.5s linear 0s;
 			overflow: auto;
 			justify-content: center;
