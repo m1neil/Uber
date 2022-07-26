@@ -227,7 +227,8 @@
 			padding-left: 25px;
 			padding-top: 220px;
 			transition: left 0.5s linear 0s;
-			// justify-content: center;
+			overflow: auto;
+			justify-content: center;
 			li {
 				border: none;
 				padding: 0px;
@@ -237,6 +238,14 @@
 
 		&__active {
 			left: 0px;
+		}
+
+		&__row {
+			justify-content: flex-end;
+		}
+
+		&__burger {
+			display: block;
 		}
 
 		&__item {
