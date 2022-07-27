@@ -23,12 +23,20 @@
 			align-items: flex-start;
 		}
 
+		&__box {
+			max-width: 900px;
+		}
+
 		&__row {
-			margin: 0px -45px;
+			margin: 0px -25px;
 		}
 
 		&__column {
-			padding: 0px 45px;
+			padding: 0px 25px;
+		}
+
+		&__text {
+			text-align: left;
 		}
 	}
 
@@ -38,10 +46,43 @@
 			max-width: 707px;
 		}
 	}
+
+	// Choice
+	.choice {
+		min-height: 815px;
+
+		&__bg {
+			height: 319px;
+		}
+
+		&__content {
+			padding-bottom: 57px;
+		}
+	}
+
+	// Terms
+	.terms {
+		&__body {
+			max-width: 890px;
+			margin: 0px auto;
+		}
+
+		&__row {
+			margin: 0px -35px;
+		}
+
+		&__column {
+			padding: 0px 35px;
+		}
+	}
+
+	.cities {
+		min-height: 650px;
+	}
 }
 
 // Media 992px
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	// Header
 	.header {
 		&__list {
@@ -57,12 +98,22 @@
 
 	// Main sreen
 	.main-screen {
+		min-height: 721px;
+		padding-bottom: 67px;
 		&__title {
-			font-size: 50px;
+			font-size: 45px;
 		}
 
 		&__subtitle {
 			font-size: 35px;
+		}
+
+		&__content {
+			padding-top: 60px;
+		}
+
+		&__text {
+			margin-bottom: 70px;
 		}
 	}
 
@@ -75,6 +126,10 @@
 
 		&__title {
 			margin-bottom: 30px;
+		}
+
+		&__box {
+			max-width: 700px;
 		}
 
 		&__row {
@@ -131,12 +186,16 @@
 			margin-bottom: 25px;
 		}
 
+		&__body {
+			max-width: 700px;
+		}
+
 		&__row {
-			margin: 0px -30px;
+			margin: 0px -25px;
 		}
 
 		&__column {
-			padding: 0px 30px;
+			padding: 0px 25px;
 		}
 	}
 
@@ -158,7 +217,7 @@
 			height: 311px;
 		}
 
-		&__cer {
+		&__car {
 			max-width: 738px;
 		}
 	}
@@ -225,10 +284,22 @@
 			font-size: 30px;
 		}
 	}
+
+	.mobile {
+		&__subtitle {
+			max-width: 550px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 }
 
 // Media 768px
 @media (max-width: 767px) {
+	.title {
+		font-size: 27px;
+	}
+	// Header
 	.header {
 		&__list {
 			position: fixed;
@@ -269,6 +340,275 @@
 			display: block;
 			width: 100%;
 			font-size: 20px;
+		}
+	}
+
+	// Main screen
+	.main-screen {
+		&__row {
+			align-items: center;
+		}
+
+		&__logo {
+			max-width: 250px;
+		}
+
+		&__call {
+			flex-direction: column;
+			align-items: center;
+			padding-top: 0px;
+		}
+
+		&__call-us {
+			display: none;
+		}
+
+		&__number {
+			font-size: 18px;
+		}
+
+		&__phone {
+			padding-top: 0px;
+			margin-right: 0px;
+			margin-bottom: 7px;
+		}
+
+		.btn {
+			height: 35px;
+			line-height: 35px;
+			font-size: 16px;
+			&_l {
+				width: 259px;
+				height: 63px;
+				line-height: 68px;
+				font-size: 18px;
+			}
+		}
+
+		&__title {
+			font-size: 40px;
+		}
+
+		&__subtitle {
+			max-width: 450px;
+			margin: 0px auto 23px;
+		}
+
+		&__body {
+			padding: 0px 20px;
+		}
+	}
+
+	// Benefits
+	.benefits {
+		padding: 30px 0px 0px;
+
+		&__suptitle {
+			margin-bottom: 20px;
+		}
+
+		&__subtitle {
+			margin-bottom: 20px;
+		}
+
+		&__title {
+			margin-bottom: 25px;
+		}
+
+		&__box {
+			max-width: 350px;
+		}
+
+		&__row {
+			margin: 0px;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__column {
+			padding: 0px;
+			margin-bottom: 30px;
+		}
+	}
+
+	// Mobile
+	.mobile {
+		padding: 30px 0px 10px;
+
+		&__suptitle {
+			margin-bottom: 20px;
+		}
+
+		&__row {
+			flex-direction: column;
+			align-items: center;
+			margin: 0px;
+		}
+
+		&__column {
+			padding: 0px;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		&__item {
+			width: 300px;
+			height: 265px;
+		}
+
+		&__label {
+			font-size: 21px;
+		}
+	}
+
+	// Choice
+	.choice {
+		// padding-top: 30px;
+		// padding-bottom: 30px;
+		min-height: 568px;
+		&__suptitle {
+			margin-bottom: 20px;
+		}
+
+		&__subtitle {
+			margin-bottom: 35px;
+		}
+
+		&__car {
+			max-width: 515px;
+		}
+
+		&__bg {
+			height: 223px;
+		}
+
+		&__content {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+	}
+
+	// Terms
+	.terms {
+		padding-top: 30px;
+		&__suptitle {
+			margin-bottom: 20px;
+		}
+
+		&__body {
+			max-width: 470px;
+		}
+
+		&__row {
+			flex-direction: column;
+			align-items: center;
+			margin: 0px;
+		}
+
+		&__column {
+			margin-bottom: 30px;
+			padding: 0px;
+		}
+	}
+
+	// Cities
+	.cities {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		min-height: 450px;
+	}
+
+	.footer {
+		padding: 20px 0px;
+		&__content {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+// Media 576px
+@media (max-width: 576px) {
+	// Header
+	.header {
+		&__list {
+			width: 80%;
+			padding-left: 20px;
+		}
+
+		&__row {
+			height: 30px;
+		}
+
+		&__link {
+			font-size: 18px;
+		}
+	}
+	// Main screen
+	.main-screen {
+		padding-top: 30px;
+		padding-bottom: 35px;
+		min-height: 430px;
+		&__top {
+			padding-top: 10px;
+			padding-bottom: 9px;
+		}
+
+		&__official {
+			display: none;
+		}
+
+		&__logo {
+			max-width: 130px;
+		}
+
+		&__call {
+			margin-right: 6px;
+		}
+
+		&__image {
+			margin-bottom: 0px;
+		}
+
+		&__number {
+			font-size: 12px;
+		}
+
+		.btn {
+			width: 110px;
+			height: 22px;
+			font-size: 10px;
+			line-height: 22px;
+			&_l {
+				width: 210px;
+				height: 50px;
+				line-height: 50px;
+				font-size: 16px;
+			}
+		}
+
+		&__content {
+			padding-top: 48px;
+		}
+
+		&__body {
+			padding: 0px 0px;
+			max-width: 300px;
+		}
+
+		&__title {
+			font-size: 30px;
+			padding: 0px 23px;
+			line-height: 1.17;
+			margin-bottom: 22px;
+		}
+
+		&__subtitle {
+			font-size: 20px;
+			margin-bottom: 66px;
+		}
+
+		&__text {
+			display: none;
 		}
 	}
 }
