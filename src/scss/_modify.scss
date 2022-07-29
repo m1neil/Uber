@@ -9,6 +9,13 @@
 	font-size: 14px;
 	color: #fff;
 	text-transform: uppercase;
+	&:hover {
+		background: linear-gradient(
+			to right,
+			#56ccf2,
+			#2f80ed
+		); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
 	&_l {
 		width: 259px;
 		height: 63px;
@@ -69,52 +76,54 @@
 	}
 }
 
-.burger {
-	position: relative;
-	right: -5px;
-	width: 26px;
-	height: 10px;
-	font-size: 0px;
-	color: transparent;
-	&:before,
-	&::after {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 1px;
-		background-color: #fff;
-		left: 0;
-		transition: all 0.2s linear 0s;
-	}
-	&:before {
-		top: 0;
-	}
-	&:after {
-		bottom: 0;
-	}
-
-	span {
-		position: absolute;
-		width: 100%;
-		height: 1px;
-		background-color: #fff;
-		left: 0;
-		top: 50%;
-		transform: translateY(-50%);
-		transition: all 0.2s linear 0s;
-	}
-
-	&__active {
+@media (max-width: 767px) {
+	.burger {
+		position: relative;
+		right: -5px;
+		width: 26px;
+		height: 10px;
+		font-size: 0px;
+		color: transparent;
+		&:before,
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: #fff;
+			left: 0;
+			transition: all 0.2s linear 0s;
+		}
 		&:before {
-			transform: rotate(45deg);
-			top: 5px;
+			top: 0;
 		}
 		&:after {
-			transform: rotate(-45deg);
-			bottom: 4px;
+			bottom: 0;
 		}
+
 		span {
-			transform: scale(0);
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: #fff;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			transition: all 0.2s linear 0s;
+		}
+
+		&__active {
+			&:before {
+				transform: rotate(45deg);
+				top: 5px;
+			}
+			&:after {
+				transform: rotate(-45deg);
+				bottom: 4px;
+			}
+			span {
+				transform: scale(0);
+			}
 		}
 	}
 }
